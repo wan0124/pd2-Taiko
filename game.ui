@@ -84,7 +84,7 @@
      </rect>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
      <string/>
@@ -103,7 +103,7 @@
      </rect>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
      <string/>
@@ -122,7 +122,7 @@
      </rect>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
      <string/>
@@ -141,7 +141,7 @@
      </rect>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
      <string/>

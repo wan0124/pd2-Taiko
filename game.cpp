@@ -111,7 +111,7 @@ void game::move()
         int y1 = ui->bluedrum->y();
 
 
-        if(event->key() == Qt::Key_U)
+        if(event->key() == Qt::Key_A)
         {
             if(x1>=60 && x1<=110)
             {
