@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/pics">
+        <file>mainwindow.jpg</file>
+        <file>game.png</file>
+        <file>drumblue.png</file>
+        <file>drumred.png</file>
+        <file>countnumber.png</file>
+        <file>drum .png</file>
+        <file>result.png</file>
+        <file>white.png</file>
+        <file>bluedrum.png</file>
+        <file>reddrum.png</file>
+        <file>back.png</file>
+    </qresource>
+</RCC>
