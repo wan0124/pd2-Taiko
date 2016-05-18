@@ -45,6 +45,8 @@ public slots:
     void keyPressEvent(QKeyEvent *event);
 
 
+private slots:
+    void on_reStart_clicked();
 };
 
 #endif // GAME_H

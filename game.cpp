@@ -19,7 +19,7 @@ game::game(QWidget *parent) :
     ui->reddrum_2->move(QPoint(658,110));
     timer1 = new QTimer(this);
     timer1->start(time_speed);
-    drum_speed = 10;
+    drum_speed = 5;
     timer2 = new QTimer(this);
     timer2->start(drum_speed);
     connect(timer1,SIGNAL(timeout()),this,SLOT(time_count()));
@@ -43,35 +43,27 @@ void game::time_count()
     else
     {
         timer1->stop();
+        timer2->stop();
         resultbox->show_result(score);
-        this->close();
 
     }
 }
 
 void game::move()
 {
-    if(now_time == 30)
-    {
-        ui->bluedrum->close();
-        ui->reddrum->close();
-        ui->reddrum_2->close();
-        ui->bluedrum_2->close();
-    }
-
     int x1 = ui->bluedrum->x();
     int x2 = ui->reddrum->x();
     int x3 = ui->reddrum_2->x();
     int x4 = ui->bluedrum_2->x();
     int y1 = ui->bluedrum->y();
-    int next1 = rand()%150;
-    int next2 = rand()%150;
-    int next3 = rand()%150;
-    int next4 = rand()%150;
+    int next1 = rand()%1000;
+    int next2 = rand()%1000;
+    int next3 = rand()%1000;
+    int next4 = rand()%1000;
 
 
     ui->bluedrum->move(QPoint(x1-1,y1));
-    ui->bluedrum_2->move(QPoint(x1-1,y1));
+    ui->bluedrum_2->move(QPoint(x4-1,y1));
     ui->reddrum->move(QPoint(x2-1,y1));
     ui->reddrum_2->move(QPoint(x3-1,y1));
     if(x1 <= 60)
@@ -104,10 +96,10 @@ void game::move()
         int x3 = ui->reddrum_2->x();
         int x4 = ui->bluedrum_2->x();
 
-        int test = rand()%150;
-        int test2 = rand()%150;
-        int test3 = rand()%150;
-        int test4 = rand()%150;
+        int test = rand()%1000;
+        int test2 = rand()%100;
+        int test3 = rand()%1000;
+        int test4 = rand()%1000;
         int y1 = ui->bluedrum->y();
 
 
@@ -144,3 +136,11 @@ void game::move()
             }
         }
     }
+
+void game::on_reStart_clicked()
+{
+    game* newwin;
+    newwin = new game;
+    this->close();
+    newwin->show();
+}

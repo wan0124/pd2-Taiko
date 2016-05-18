@@ -1,5 +1,4 @@
 #include "result.h"
-#include "game.h"
 #include "ui_result.h"
 
 result::result(QWidget *parent) :
@@ -37,3 +36,9 @@ void result::show_result(int score)
     newgame->show();
 }
 */
+
+
+void result::on_back_clicked()
+{
+    this->close();
+}

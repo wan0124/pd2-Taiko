@@ -46,7 +46,7 @@
      <pixmap resource="pics.qrc">:/pics/white.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="restart">
+   <widget class="QPushButton" name="back">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -56,7 +56,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>reStart</string>
+     <string>Back</string>
     </property>
    </widget>
    <widget class="QPushButton" name="exit">
@@ -87,7 +87,7 @@
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
-   <zorder>restart</zorder>
+   <zorder>back</zorder>
    <zorder>exit</zorder>
    <zorder>resultscore</zorder>
   </widget>
@@ -97,7 +97,7 @@
      <x>0</x>
      <y>0</y>
      <width>514</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

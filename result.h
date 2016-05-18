@@ -2,6 +2,8 @@
 #define RESULT_H
 
 #include <QMainWindow>
+
+
 namespace Ui {
 class result;
 }
@@ -19,9 +21,12 @@ private slots:
     void on_exit_clicked();
 
 
+
+    void on_back_clicked();
+
 private:
     Ui::result *ui;
-    //game *newgame;
+//    game *newgame;
 };
 
 #endif // RESULT_H

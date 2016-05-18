@@ -33,8 +33,8 @@
    <widget class="QLCDNumber" name="count">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>250</y>
+      <x>50</x>
+      <y>30</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -52,8 +52,8 @@
    <widget class="QLCDNumber" name="score">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>20</y>
+      <x>360</x>
+      <y>30</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -150,6 +150,27 @@
      <pixmap resource="pics.qrc">:/pics/bluedrum.png</pixmap>
     </property>
    </widget>
+   <widget class="QPushButton" name="reStart">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>270</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ReStart</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>count</zorder>
+   <zorder>score</zorder>
+   <zorder>bluedrum_2</zorder>
+   <zorder>reddrum</zorder>
+   <zorder>reddrum_2</zorder>
+   <zorder>bluedrum</zorder>
+   <zorder>reStart</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -157,7 +178,7 @@
      <x>0</x>
      <y>0</y>
      <width>511</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
